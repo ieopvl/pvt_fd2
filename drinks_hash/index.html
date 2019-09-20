@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="HashStorage.js"></script>
+    <script src="script.js"></script>
+
+    <ul>
+
+      <li>
+        <button type='button'  onclick='drinkStorage.addValue(prompt("Введите навзвание напитка", ""), addInfo())'>Добавить напиток</button>
+      </li>
+
+      <li>
+        <button type='button' onclick="alert(getInfoByName( prompt('Введите название напитка', '') ))">Узнать информацию о напитке</button>
+      </li>
+
+      <li>
+        <button type='button' onclick="drinkStorage.deleteValue( prompt('Введите название напитка, который хотите удалить', '') ) ? alert('Напиток успешно удалили') : alert('Такого напитка в базе не было')">Удалить напиток</button>
+      </li>
+
+      <li>
+        <button type='button' onclick='alert( drinkStorage.getKeys() )'>Все напитки</button>
+      </li>
+
+    </ul>
+    
+    <a class='test' href='test.html'>test</a>
+  </body>
+</html>
