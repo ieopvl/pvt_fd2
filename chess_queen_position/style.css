@@ -1,0 +1,94 @@
+
+
+.main {
+  background-color: brown;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+  margin: 0 auto;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: Arial, sans-serif;
+  font-weight:lighter;
+  color: ivory;
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.quantity {
+  font-size: 45px;
+  font-weight:bolder;
+  color: honeydew;
+}
+
+.manage {
+ 
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    color: brown;
+}
+
+button:hover {
+  background-color: tan;
+  opacity: 0.5;
+  color: ivory;
+  border-radius: 12px;
+}
+
+button:active {
+  outline: none;
+  background-color: tan;
+  opacity: 1;
+   box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+
+button:focus {
+  outline: none;
+  background-color: tan;
+   opacity: 1;
+}
+
+button:visited {
+    background-color: transparent;
+    border-color: transparent;
+    color: brown;
+}
+
+
+
+
+ .board{
+  height: 320px;
+  width: 320px;
+  margin: 15px auto;
+  border: 1px solid rgb(187, 184, 184);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.cell{
+  height: 40px;
+  width: 40px;
+  float: left;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.black{
+  background: burlywood;
+}
+
+.white{
+  background: white;
+}
