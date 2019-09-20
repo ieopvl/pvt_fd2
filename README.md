@@ -1,1 +1,1 @@
-# pvt_fd2
+# Tasks from PVT course "JavaScript wev-developing"
