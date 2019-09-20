@@ -1,0 +1,10 @@
+.switch-clock {
+  background-color: yellowgreen;
+  width: 100px;
+  border-radius: 2%;
+  /* box-shadow: 6px 10px 22px -8px rgba(0,0,0,0.75); */
+  position: relative;
+  text-align: center;
+  box-sizing: content-box;
+  padding: 5px;
+}
