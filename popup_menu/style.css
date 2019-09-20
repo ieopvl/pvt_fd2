@@ -1,0 +1,88 @@
+body {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Arial", sans-serif;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.menu a {
+  display: block;
+  padding: 8px 25px 8px 10px;
+  color: rgb(8, 120, 224);
+  border: 1px solid #3c6eb9;
+  background-color: rgb(255, 252, 81);
+
+}
+
+.menu .par {
+  display: block;
+  padding: 8px 25px 8px 10px;
+  color: rgb(31, 161, 212);
+  border: 1px solid #3c6eb9;
+
+  font-weight: bold;
+  text-decoration: none;
+
+  background: url(marker-down.png) no-repeat 95% center rgb(255, 252, 81);
+  background-size: 15px; 
+}
+
+.submenu .par {
+  background: url(marker.png) no-repeat 95% center rgb(255, 252, 81);
+  background-size: 15px; 
+}
+
+.menu a:hover {
+  background-color: #ffee00;
+}
+
+
+.submenu > li {
+  position: relative;
+}
+
+.menu .submenu {
+  display: none;
+  left: 5px;
+  top: 95%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fcf8e3;
+  z-index: 10;
+}
+
+.submenu .submenu { 
+  top : 10%;
+  left: 95%;
+}
+
+.menu > li:hover > .submenu {
+  display: block;
+}
+
+.submenu > li:hover > .submenu {
+  display: block;
+}
+
+
+
+
+
+
+
+
