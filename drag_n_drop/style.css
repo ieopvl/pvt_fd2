@@ -1,0 +1,9 @@
+
+.puzzle {
+  width: 100px;
+}
+
+button {
+  position: absolute;
+  top: 400px;
+}
