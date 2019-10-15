@@ -11,24 +11,23 @@
  
  let img = new Image();
  img.src = 'img/snail.png';
+ 
+ let imageData;
+
  img.addEventListener('load', render);
 
  function render() {
    ctx.drawImage(img, 0, 0, 300, 300);
- }
-/******************************************************/
+   imageData = ctx.getImageData(0, 0, 300, 300);
+   console.log('imageData.data :', imageData.data);
 
- 
- const imageData = ctx.getImageData(0, 0, 300, 300);
- console.log('imageData.data :', imageData.data);
+   let startR = 255;
+   let startG = 255;
+   let startB = 255;
 
- let startR = 255;
- let startG = 255;
- let startB = 255;
-
- let fillColorR = 255;
- let fillColorG = 0;
- let fillColorB = 0;
+   let fillColorR = 255;
+   let fillColorG = 0;
+   let fillColorB = 0;
 
 
 
@@ -86,22 +85,24 @@
 
  /* function manage color  */
 
- function matchStartColor(pixelPos) {
-   let r = imageData.data[pixelPos];
-   let g = imageData.data[pixelPos + 1];
-   let b = imageData.data[pixelPos + 2];
-   return (r == startR && g == startG && b == startB);
- }
+  function matchStartColor(pixelPos) {
+    let r = imageData.data[pixelPos];
+    let g = imageData.data[pixelPos + 1];
+    let b = imageData.data[pixelPos + 2];
+    console.log(r, startR ); 
+    return (r == startR && g == startG && b == startB);
+  }
 
  
- function colorPixel(pixelPos) {
-   imageData.data[pixelPos] = fillColorR;
-   imageData.data[pixelPos + 1] = fillColorG;
-   imageData.data[pixelPos + 2] = fillColorB;
-   imageData.data[pixelPos + 3] = 255;
+  function colorPixel(pixelPos) {
+    imageData.data[pixelPos] = fillColorR;
+    imageData.data[pixelPos + 1] = fillColorG;
+    imageData.data[pixelPos + 2] = fillColorB;
+    imageData.data[pixelPos + 3] = 255;
+  }
+
  }
-
-
+/******************************************************/
 
 
 })();
