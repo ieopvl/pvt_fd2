@@ -8,13 +8,15 @@ drinks.setInfo = function() {
   let alcahol = confirm("Алкогольный?");
   let recipe = prompt("Введите рецепт");
 
-  let info = `Алкогольный: ${alcahol ? "да" : "нет"};\nРецепт: ${recipe}`;
+  //let info = `Алкогольный: ${alcahol ? "да" : "нет"};\nРецепт: ${recipe}`;
 
-  this.addValue(drinkName, info);
+  this.addValue(drinkName, {alcahol, recipe});
 }
 
 drinks.getInfo = function(key) {
-  return this.getValue(key) || false;
+  let data = this.getValue(key);
+  if(!data) return false;
+  return `Алкогольный: ${data.alcahol ? "да" : "нет"}\nРецепт: ${data.recipe}`;
 }
 
 const food = new LocalStorage("food"); //new HashStorage();

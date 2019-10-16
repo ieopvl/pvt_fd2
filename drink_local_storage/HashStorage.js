@@ -1,5 +1,5 @@
 'use strict'
-
+/*
 class HashStorage {
   constructor() {
     this.hash = {};
@@ -15,10 +15,11 @@ class HashStorage {
   }
 
   deleteValue(key) {
-    return  this.getValue(key) ? delete this.hash[key] : false;
+    return  key in this.hash ? delete this.hash[key] : false;
   }
 
   getKeys() {
     return Object.keys(this.hash);
   }
 }
+*/
