@@ -4,10 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Local Storage</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- <script src="LocStorage.js"></script> -->
+    <script src="HashStorage.js"></script>
     <script src="LocStorage.js"></script>
     <script src="script.js"></script>
+
+    <h2>Напитки</h2>
+    <ul>
+      <li>
+        <button type='button'  onclick='drinks.setInfo()'>Добавить напиток</button>
+      </li>
+      <li>
+        <button type='button'  onclick='alert( drinks.getInfo(prompt("Напиток", " ")) || "Такого напитка нет")'>Иформация о напитки</button>
+      </li>
+      <li>
+        <button type='button'  onclick='alert( drinks.getKeys() || "Нет такого" )'>Список ключей</button>
+      </li>
+      <li>
+        <button type='button'  onclick='alert( drinks.deleteValue(prompt("Нзвание напитка")) ? "Напиток удален" : "Напиток не найден" )'>Удалить</button>
+      </li>
+    </ul>
+
+    <h2>Блюда</h2>
+    <ul>
+      <li>
+        <button type='button'  onclick='food.setInfo()'>Добавить еду</button>
+      </li>
+      <li>
+        <button type='button'  onclick='alert( food.getInfo(prompt("Блюдо", " ")) || "Такого блюда нет")'>Иформация о напитки</button>
+      </li>
+      <li>
+        <button type='button'  onclick='alert( food.getKeys() || "Нет такого" )'>Список ключей</button>
+      </li>
+      <li>
+        <button type='button'  onclick='alert( food.deleteValue(prompt("Нзвание напитка")) ? "Блюдо удалено" : "Блюдо не найдено" )'>Удалить</button>
+      </li>
+    </ul>
+
   </body>
 </html>
+
