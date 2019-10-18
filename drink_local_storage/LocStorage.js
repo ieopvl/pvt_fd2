@@ -13,7 +13,7 @@ class LocalStorage {
           this.storage[key] = localData[key] ;
         }
       }
-      console.log(this.storage);
+      
     }
 
     addValue(key, value) {
